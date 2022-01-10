@@ -12,6 +12,8 @@
 		7D2CFB622786F09600D985D2 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D2CFB612786F09600D985D2 /* loading.json */; };
 		7D2CFB642786F5A200D985D2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2CFB632786F5A200D985D2 /* LoadingView.swift */; };
 		7D31588C2786C90A00FB2155 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31588B2786C90A00FB2155 /* UIImage+Extensions.swift */; };
+		7D76F74D278C3B2200C9A47E /* UpComingMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA017FF2785526000E1AAC5 /* UpComingMovieModel.swift */; };
+		7D76F74E278C3B2400C9A47E /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA017F527854F0700E1AAC5 /* MovieListModel.swift */; };
 		7DA017F227853F3B00E1AAC5 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA017F127853F3B00E1AAC5 /* PinterestLayout.swift */; };
 		7DA017F427854A8F00E1AAC5 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA017F327854A8F00E1AAC5 /* MovieCell.swift */; };
 		7DA017F627854F0700E1AAC5 /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA017F527854F0700E1AAC5 /* MovieListModel.swift */; };
@@ -20,6 +22,7 @@
 		7DA018002785526000E1AAC5 /* UpComingMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA017FF2785526000E1AAC5 /* UpComingMovieModel.swift */; };
 		7DA018022785568D00E1AAC5 /* MovieStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA018012785568D00E1AAC5 /* MovieStatic.swift */; };
 		7DA01804278595CC00E1AAC5 /* IndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA01803278595CC00E1AAC5 /* IndicatorCell.swift */; };
+		7DB80D8D278C76ED006B0AE5 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D76F74F278C760600C9A47E /* NetworkImage.swift */; };
 		7DD15D4B2787E2E600F2529C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD15D4A2787E2E600F2529C /* DetailView.swift */; };
 		7DD15D4D2787EB3A00F2529C /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD15D4C2787EB3A00F2529C /* ProfileCell.swift */; };
 		7DD15D4F2787F1B100F2529C /* AutoSizedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD15D4E2787F1B100F2529C /* AutoSizedCollectionView.swift */; };
@@ -67,6 +70,7 @@
 		7D2CFB612786F09600D985D2 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading.json; path = ../../../../Downloads/loading.json; sourceTree = "<group>"; };
 		7D2CFB632786F5A200D985D2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7D31588B2786C90A00FB2155 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		7D76F74F278C760600C9A47E /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		7DA017F127853F3B00E1AAC5 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		7DA017F327854A8F00E1AAC5 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		7DA017F527854F0700E1AAC5 /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 				7DF301FB2784570E008688C7 /* TravelokaCinemaWidget.swift */,
 				7DF301FD2784570F008688C7 /* Assets.xcassets */,
 				7DF301FF2784570F008688C7 /* Info.plist */,
+				7D76F74F278C760600C9A47E /* NetworkImage.swift */,
 			);
 			path = TravelokaCinemaWidget;
 			sourceTree = "<group>";
@@ -412,6 +417,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D76F74E278C3B2400C9A47E /* MovieListModel.swift in Sources */,
+				7D76F74D278C3B2200C9A47E /* UpComingMovieModel.swift in Sources */,
+				7DB80D8D278C76ED006B0AE5 /* NetworkImage.swift in Sources */,
 				7DF301FC2784570E008688C7 /* TravelokaCinemaWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +501,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -547,6 +556,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

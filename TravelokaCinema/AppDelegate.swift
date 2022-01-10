@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,12 +23,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController?.view.backgroundColor = .background
         window?.makeKeyAndVisible()
         
-        IQKeyboardManager.shared.enable = true
-        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
-        
         return true
     }
 
-
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if let scheme = url.scheme,
+           scheme.localizedCaseInsensitiveCompare("traveloka.cinema") == .orderedSame,
+           let view = url.host {
+            var parameters: [String: String] = [:]
+            URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?.forEach {
+                parameters[$0.name] = $0.value
+            }
+            
+            if view == "detail", let id: Int = Int(parameters["id"] ?? "") {
+                let topViewController = self.window?.rootViewController as? UINavigationController
+                let viewModel = MovieDetailViewModel(service: MovieService(), movieId: id)
+                //438695
+                let detailVc = MovieDetailViewController(viewModel: viewModel)
+                topViewController?.pushViewController(detailVc, animated: false)
+            }
+            
+            print(scheme)
+            print(view)
+            print(parameters)
+        }
+        
+        return true
+    }
 }
 

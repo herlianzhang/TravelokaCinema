@@ -26,7 +26,6 @@ class MovieService: MovieServiceDelegate {
             "page": page
         ]
         AF.request("https://api.themoviedb.org/3/movie/upcoming", parameters: params, headers: movieHeader)
-            .validate()
             .responseDecodable(of: UpComingMovieModel.self) { response in
                 if let data = response.value, let movies = data.results {
                     success(movies)

@@ -7,12 +7,25 @@
 		<key>TravelokaCinema.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>12</integer>
 		</dict>
 		<key>TravelokaCinemaWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>11</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7DDF447C2784540B008FAE70</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7DF301F42784570E008688C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
