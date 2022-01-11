@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7DF301F42784570E008688C7"
-               BuildableName = "Traveloka Cinema.appex"
+               BuildableName = "TravelokaCinemaWidgetExtension.appex"
                BlueprintName = "TravelokaCinemaWidgetExtension"
                ReferencedContainer = "container:TravelokaCinema.xcodeproj">
             </BuildableReference>
@@ -30,7 +30,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7DDF447C2784540B008FAE70"
-               BuildableName = "Traveloka Cinema.app"
+               BuildableName = "TravelokaCinema.app"
                BlueprintName = "TravelokaCinema"
                ReferencedContainer = "container:TravelokaCinema.xcodeproj">
             </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7DF301F42784570E008688C7"
-            BuildableName = "Traveloka Cinema.appex"
+            BuildableName = "TravelokaCinemaWidgetExtension.appex"
             BlueprintName = "TravelokaCinemaWidgetExtension"
             ReferencedContainer = "container:TravelokaCinema.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7DDF447C2784540B008FAE70"
-            BuildableName = "Traveloka Cinema.app"
+            BuildableName = "TravelokaCinema.app"
             BlueprintName = "TravelokaCinema"
             ReferencedContainer = "container:TravelokaCinema.xcodeproj">
          </BuildableReference>
@@ -80,8 +80,8 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "_XCWidgetKind"
-            value = ""
-            isEnabled = "NO">
+            value = "TravelokaCinemaLargeWidget"
+            isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "_XCWidgetDefaultView"
@@ -90,7 +90,7 @@
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "_XCWidgetFamily"
-            value = "medium"
+            value = "large"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
@@ -107,7 +107,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7DDF447C2784540B008FAE70"
-            BuildableName = "Traveloka Cinema.app"
+            BuildableName = "TravelokaCinema.app"
             BlueprintName = "TravelokaCinema"
             ReferencedContainer = "container:TravelokaCinema.xcodeproj">
          </BuildableReference>

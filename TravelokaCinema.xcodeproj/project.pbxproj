@@ -12,6 +12,7 @@
 		7D2CFB622786F09600D985D2 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D2CFB612786F09600D985D2 /* loading.json */; };
 		7D2CFB642786F5A200D985D2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2CFB632786F5A200D985D2 /* LoadingView.swift */; };
 		7D31588C2786C90A00FB2155 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31588B2786C90A00FB2155 /* UIImage+Extensions.swift */; };
+		7D61934B278D92F7006E8618 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF4494278455AA008FAE70 /* UIColor+Extensions.swift */; };
 		7D76F74D278C3B2200C9A47E /* UpComingMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA017FF2785526000E1AAC5 /* UpComingMovieModel.swift */; };
 		7D76F74E278C3B2400C9A47E /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA017F527854F0700E1AAC5 /* MovieListModel.swift */; };
 		7DA017F227853F3B00E1AAC5 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA017F127853F3B00E1AAC5 /* PinterestLayout.swift */; };
@@ -22,7 +23,13 @@
 		7DA018002785526000E1AAC5 /* UpComingMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA017FF2785526000E1AAC5 /* UpComingMovieModel.swift */; };
 		7DA018022785568D00E1AAC5 /* MovieStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA018012785568D00E1AAC5 /* MovieStatic.swift */; };
 		7DA01804278595CC00E1AAC5 /* IndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA01803278595CC00E1AAC5 /* IndicatorCell.swift */; };
-		7DB80D8D278C76ED006B0AE5 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D76F74F278C760600C9A47E /* NetworkImage.swift */; };
+		7DB80D8D278C76ED006B0AE5 /* GenericImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D76F74F278C760600C9A47E /* GenericImage.swift */; };
+		7DBC6F4A278D412F00F9B0A6 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC6F49278D412F00F9B0A6 /* Networking.swift */; };
+		7DBC6F4C278D42D700F9B0A6 /* TimeLineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC6F4B278D42D700F9B0A6 /* TimeLineProvider.swift */; };
+		7DBC6F4E278D430900F9B0A6 /* TimeLineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC6F4D278D430900F9B0A6 /* TimeLineEntry.swift */; };
+		7DBC6F50278D437000F9B0A6 /* TravelokaCinemaWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC6F4F278D437000F9B0A6 /* TravelokaCinemaWidgetEntryView.swift */; };
+		7DBC6F53278D7BE700F9B0A6 /* TravelokaCinemaWidgetLargeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC6F52278D7BE700F9B0A6 /* TravelokaCinemaWidgetLargeEntryView.swift */; };
+		7DBC6F54278D83A800F9B0A6 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31588B2786C90A00FB2155 /* UIImage+Extensions.swift */; };
 		7DD15D4B2787E2E600F2529C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD15D4A2787E2E600F2529C /* DetailView.swift */; };
 		7DD15D4D2787EB3A00F2529C /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD15D4C2787EB3A00F2529C /* ProfileCell.swift */; };
 		7DD15D4F2787F1B100F2529C /* AutoSizedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD15D4E2787F1B100F2529C /* AutoSizedCollectionView.swift */; };
@@ -39,6 +46,7 @@
 		7DF301FC2784570E008688C7 /* TravelokaCinemaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF301FB2784570E008688C7 /* TravelokaCinemaWidget.swift */; };
 		7DF301FE2784570F008688C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF301FD2784570F008688C7 /* Assets.xcassets */; };
 		7DF302022784570F008688C7 /* TravelokaCinemaWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7DF301F52784570E008688C7 /* TravelokaCinemaWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE2E8DBF94628245F61F59B8 /* Pods_TravelokaCinema_TravelokaCinemaWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8247113F59076DD5683FE437 /* Pods_TravelokaCinema_TravelokaCinemaWidgetExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,11 +74,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		264B4E19F9E8FE21E9AFA520 /* Pods-TravelokaCinema-TravelokaCinemaWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelokaCinema-TravelokaCinemaWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-TravelokaCinema-TravelokaCinemaWidgetExtension/Pods-TravelokaCinema-TravelokaCinemaWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		7D2CFB5E2786EA4300D985D2 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		7D2CFB612786F09600D985D2 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading.json; path = ../../../../Downloads/loading.json; sourceTree = "<group>"; };
 		7D2CFB632786F5A200D985D2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7D31588B2786C90A00FB2155 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
-		7D76F74F278C760600C9A47E /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
+		7D76F74F278C760600C9A47E /* GenericImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericImage.swift; sourceTree = "<group>"; };
 		7DA017F127853F3B00E1AAC5 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		7DA017F327854A8F00E1AAC5 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		7DA017F527854F0700E1AAC5 /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
@@ -79,6 +88,11 @@
 		7DA017FF2785526000E1AAC5 /* UpComingMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingMovieModel.swift; sourceTree = "<group>"; };
 		7DA018012785568D00E1AAC5 /* MovieStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStatic.swift; sourceTree = "<group>"; };
 		7DA01803278595CC00E1AAC5 /* IndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorCell.swift; sourceTree = "<group>"; };
+		7DBC6F49278D412F00F9B0A6 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		7DBC6F4B278D42D700F9B0A6 /* TimeLineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineProvider.swift; sourceTree = "<group>"; };
+		7DBC6F4D278D430900F9B0A6 /* TimeLineEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineEntry.swift; sourceTree = "<group>"; };
+		7DBC6F4F278D437000F9B0A6 /* TravelokaCinemaWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelokaCinemaWidgetEntryView.swift; sourceTree = "<group>"; };
+		7DBC6F52278D7BE700F9B0A6 /* TravelokaCinemaWidgetLargeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelokaCinemaWidgetLargeEntryView.swift; sourceTree = "<group>"; };
 		7DD15D4A2787E2E600F2529C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7DD15D4C2787EB3A00F2529C /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		7DD15D4E2787F1B100F2529C /* AutoSizedCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSizedCollectionView.swift; sourceTree = "<group>"; };
@@ -98,8 +112,10 @@
 		7DF301FB2784570E008688C7 /* TravelokaCinemaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelokaCinemaWidget.swift; sourceTree = "<group>"; };
 		7DF301FD2784570F008688C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DF301FF2784570F008688C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8247113F59076DD5683FE437 /* Pods_TravelokaCinema_TravelokaCinemaWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelokaCinema_TravelokaCinemaWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED6B580058A07F0BA36A6E5 /* Pods-TravelokaCinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelokaCinema.release.xcconfig"; path = "Target Support Files/Pods-TravelokaCinema/Pods-TravelokaCinema.release.xcconfig"; sourceTree = "<group>"; };
 		BB6A018D201091A9FF672B94 /* Pods-TravelokaCinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelokaCinema.debug.xcconfig"; path = "Target Support Files/Pods-TravelokaCinema/Pods-TravelokaCinema.debug.xcconfig"; sourceTree = "<group>"; };
+		C4C929E130DB14A75DC1D482 /* Pods-TravelokaCinema-TravelokaCinemaWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelokaCinema-TravelokaCinemaWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-TravelokaCinema-TravelokaCinemaWidgetExtension/Pods-TravelokaCinema-TravelokaCinemaWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		C54192CBF6AE39608304B545 /* Pods_TravelokaCinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelokaCinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,6 +134,7 @@
 			files = (
 				7DF301F92784570E008688C7 /* SwiftUI.framework in Frameworks */,
 				7DF301F72784570E008688C7 /* WidgetKit.framework in Frameworks */,
+				AE2E8DBF94628245F61F59B8 /* Pods_TravelokaCinema_TravelokaCinemaWidgetExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +147,7 @@
 				C54192CBF6AE39608304B545 /* Pods_TravelokaCinema.framework */,
 				7DF301F62784570E008688C7 /* WidgetKit.framework */,
 				7DF301F82784570E008688C7 /* SwiftUI.framework */,
+				8247113F59076DD5683FE437 /* Pods_TravelokaCinema_TravelokaCinemaWidgetExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,6 +202,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7DBC6F51278D7BBC00F9B0A6 /* Entry View */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC6F52278D7BE700F9B0A6 /* TravelokaCinemaWidgetLargeEntryView.swift */,
+				7DBC6F4F278D437000F9B0A6 /* TravelokaCinemaWidgetEntryView.swift */,
+			);
+			path = "Entry View";
+			sourceTree = "<group>";
+		};
 		7DDF44742784540B008FAE70 = {
 			isa = PBXGroup;
 			children = (
@@ -228,10 +255,14 @@
 		7DF301FA2784570E008688C7 /* TravelokaCinemaWidget */ = {
 			isa = PBXGroup;
 			children = (
+				7DBC6F51278D7BBC00F9B0A6 /* Entry View */,
 				7DF301FB2784570E008688C7 /* TravelokaCinemaWidget.swift */,
 				7DF301FD2784570F008688C7 /* Assets.xcassets */,
 				7DF301FF2784570F008688C7 /* Info.plist */,
-				7D76F74F278C760600C9A47E /* NetworkImage.swift */,
+				7D76F74F278C760600C9A47E /* GenericImage.swift */,
+				7DBC6F49278D412F00F9B0A6 /* Networking.swift */,
+				7DBC6F4B278D42D700F9B0A6 /* TimeLineProvider.swift */,
+				7DBC6F4D278D430900F9B0A6 /* TimeLineEntry.swift */,
 			);
 			path = TravelokaCinemaWidget;
 			sourceTree = "<group>";
@@ -241,6 +272,8 @@
 			children = (
 				BB6A018D201091A9FF672B94 /* Pods-TravelokaCinema.debug.xcconfig */,
 				AED6B580058A07F0BA36A6E5 /* Pods-TravelokaCinema.release.xcconfig */,
+				264B4E19F9E8FE21E9AFA520 /* Pods-TravelokaCinema-TravelokaCinemaWidgetExtension.debug.xcconfig */,
+				C4C929E130DB14A75DC1D482 /* Pods-TravelokaCinema-TravelokaCinemaWidgetExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -273,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DF302062784570F008688C7 /* Build configuration list for PBXNativeTarget "TravelokaCinemaWidgetExtension" */;
 			buildPhases = (
+				9BFD66D6315C7C72F2A1C1F9 /* [CP] Check Pods Manifest.lock */,
 				7DF301F12784570E008688C7 /* Sources */,
 				7DF301F22784570E008688C7 /* Frameworks */,
 				7DF301F32784570E008688C7 /* Resources */,
@@ -383,6 +417,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9BFD66D6315C7C72F2A1C1F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelokaCinema-TravelokaCinemaWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -418,9 +474,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D76F74E278C3B2400C9A47E /* MovieListModel.swift in Sources */,
+				7DBC6F4A278D412F00F9B0A6 /* Networking.swift in Sources */,
+				7DBC6F4E278D430900F9B0A6 /* TimeLineEntry.swift in Sources */,
 				7D76F74D278C3B2200C9A47E /* UpComingMovieModel.swift in Sources */,
-				7DB80D8D278C76ED006B0AE5 /* NetworkImage.swift in Sources */,
+				7DB80D8D278C76ED006B0AE5 /* GenericImage.swift in Sources */,
+				7DBC6F53278D7BE700F9B0A6 /* TravelokaCinemaWidgetLargeEntryView.swift in Sources */,
 				7DF301FC2784570E008688C7 /* TravelokaCinemaWidget.swift in Sources */,
+				7DBC6F54278D83A800F9B0A6 /* UIImage+Extensions.swift in Sources */,
+				7D61934B278D92F7006E8618 /* UIColor+Extensions.swift in Sources */,
+				7DBC6F4C278D42D700F9B0A6 /* TimeLineProvider.swift in Sources */,
+				7DBC6F50278D437000F9B0A6 /* TravelokaCinemaWidgetEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,12 +673,14 @@
 		};
 		7DF302042784570F008688C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264B4E19F9E8FE21E9AFA520 /* Pods-TravelokaCinema-TravelokaCinemaWidgetExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTF7PKCABJ;
 				INFOPLIST_FILE = TravelokaCinemaWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -625,18 +690,20 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7DF302052784570F008688C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C929E130DB14A75DC1D482 /* Pods-TravelokaCinema-TravelokaCinemaWidgetExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTF7PKCABJ;
 				INFOPLIST_FILE = TravelokaCinemaWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,7 +713,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
