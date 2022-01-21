@@ -7,16 +7,18 @@
 
 import SwiftUI
 import WidgetKit
+import SDWebImageSwiftUI
 
 struct TravelokaCinemaWidgetEntryView : View {
     @Environment(\.widgetFamily) var family
     var entry: Provider.Entry
-    
+    var posterPath: String = ""
     var body: some View {
         switch family {
         case .systemSmall:
             if entry.movie.id != Int.min {
                 ZStack {
+                    WebImage(url: URL(string: posterPath))
                     GenericImage(uiImage: entry.movie.image)
                 }
                 .widgetURL(entry.movie.deeplink)

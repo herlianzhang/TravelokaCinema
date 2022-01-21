@@ -23,7 +23,9 @@ func downloadImages(paths: [String], completion: @escaping ([String: UIImage?])-
     var images: [String: UIImage?] = [:]
     for path in paths {
         imageRequestGroup.enter()
-        SDWebImageManager.shared.loadImage(with: URL(string: path), options: SDWebImageOptions(rawValue: 0), progress: nil) { image, _, _, _, _, _ in
+        SDWebImageManager.shared.loadImage(with: URL(string: path),
+                                           options: SDWebImageOptions(rawValue: 0),
+                                           progress: nil) { image, _, _, _, _, _ in
             if let data = image?.jpegData(compressionQuality: 0.25) {
                 images[path] = UIImage(data: data)
             }

@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import Login
 
 struct DetailModel {
     let header: String
@@ -33,6 +34,7 @@ class MovieDetailViewController: UIViewController {
     private lazy var coverImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        let test = LoginViewController()
         return imageView
     }()
     

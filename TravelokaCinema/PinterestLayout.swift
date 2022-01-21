@@ -49,9 +49,9 @@ class PinterestLayout: UICollectionViewLayout {
         for item in 0..<collectionView.numberOfItems(inSection: 0) {
             let indexPath = IndexPath(item: item, section: 0)
             
-            let photoHeight = delegate?.collectionView(collectionView, columnWidth: columnWidth, heightForCellAtIndexPath: indexPath) ?? 180
+            let cellHeight = delegate?.collectionView(collectionView, columnWidth: columnWidth, heightForCellAtIndexPath: indexPath) ?? 180
             
-            let height = cellPadding * 2 + photoHeight
+            let height = cellPadding * 2 + cellHeight
             let frame = CGRect(x: xOffset[column], y: yOffset[column], width: columnWidth, height: height)
             
             let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)

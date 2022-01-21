@@ -115,7 +115,9 @@ class MovieListViewController: UIViewController {
 }
 
 extension MovieListViewController: PinterestLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, columnWidth width: CGFloat, heightForCellAtIndexPath indexPath: IndexPath) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView,
+                        columnWidth width: CGFloat,
+                        heightForCellAtIndexPath indexPath: IndexPath) -> CGFloat {
         guard let movie: MovieListModel = viewModel.getMovie(indexPath.item) else { return 50 }
         let approximateWidth = width - 24
         let size = CGSize(width: approximateWidth, height: 1000)

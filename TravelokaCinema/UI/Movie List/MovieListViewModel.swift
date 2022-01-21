@@ -109,16 +109,16 @@ class MovieListViewModel {
     }
     
     func updateBackgroundColor(path: String, image: UIImage?, index: Int) {
-        guard cacheBackgroundColor[path] == nil,
-              let backgroundColor = image?.averageColor else {
-            return
+        DispatchQueue.global(qos: .default).async { [weak self] in
+            guard let `self` = self,
+                  self.cacheBackgroundColor[path] == nil,
+                  let backgroundColor = image?.averageColor else { return }
+            let textColor: UIColor? = backgroundColor.isDarkColor ? .white : .black
+            self.cacheBackgroundColor[path] = (backgroundColor, textColor)
+            guard var currentData = try? self.data.value() else { return }
+            currentData[index].backgroundColor = backgroundColor
+            currentData[index].textColor = textColor
+            self.data.onNext(currentData)
         }
-        let textColor: UIColor? = backgroundColor.isDarkColor ? .white : .black
-        cacheBackgroundColor[path] = (backgroundColor, textColor)
-        guard var currentData = try? data.value() else { return }
-        currentData[index].backgroundColor = backgroundColor
-        currentData[index].textColor = textColor
-        data.onNext(currentData)
-        
     }
 }

@@ -14,6 +14,8 @@ target 'TravelokaCinema' do
   pod 'RxCocoa', '~> 6.2.0'
   pod 'RxDataSources', '~> 5.0.0'
   pod 'lottie-ios'
+
+  pod 'Login', :path => 'Modules/Login'
   
   target 'TravelokaCinemaWidgetExtension' do
     pod 'SDWebImageSwiftUI'
