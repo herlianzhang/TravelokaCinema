@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: '**'
 
 jobs:
   build:
@@ -14,4 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: xcodebuild -scheme TravelokaCinema test -destination "platform=iOS Simulator,name=iPhone 12 mini"
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
